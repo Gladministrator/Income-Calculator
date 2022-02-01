@@ -1,0 +1,74 @@
+﻿* {
+    margin: 0;
+    font-size:1.1rem;
+}
+
+body {
+    background-color:mediumturquoise;
+}
+
+.main-app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.all-inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    width:400px;
+    max-width:100%;
+}
+
+.individual-input{
+    width:100%;
+    display:flex;
+    column-gap:30px;
+}
+    .individual-input > *:first-child {
+        width: 33%;
+    }
+    .individual-input > *:last-child{
+        width: 67%;
+    }
+
+.calculate-button {
+    font-size: 1.3rem;
+    border:2px solid orange;
+    padding:5px;
+    background-color:forestgreen;
+    color:white;
+}
+
+h2{
+    font-size:1.4rem;
+    text-align:center;
+}
+
+.payment-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    max-width: 100%;
+    border:5px solid black;
+    padding:10px;
+}
+
+    .payment-panel > *:not(:first-child) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left:5px;
+    }
+
+.clear-button {
+    padding: 5px;
+    border: 2px solid white;
+    font-size: 1.4rem;
+    background-color: red;
+}
