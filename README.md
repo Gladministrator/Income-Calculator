@@ -2,8 +2,8 @@
 Simple app build with ASP.NET 4.7 to calculate weekly earnings
 
 ## Technologies
-  - C# (.NET 4.7)
-  - HTML
+  - C#
+  - ASP.NET
   - Web Forms
   - CSS
 
