@@ -32,3 +32,14 @@ calculation would be the same.
 This was my first "real" app with C# so it was a little bit new to me but I
 picked it up quickly since it's programming at the end of the day. Coming 
 from a TypeScript background, the strongly typed language didn't phase me.
+
+### Pictures of the app
+
+#### Before Submission
+
+![Before](Pictures/Picture1.JPG)
+
+#### After Submission
+
+![After](Pictures/After.JPG)
+
