@@ -13,37 +13,33 @@ It will show taxes paid, net income, gross income, and overtime pay.
 
 ### Solutions and Architecture
 
-When the app starts up, the user is prompted to enter their credentials:
+I ensured data was validated so the application wouldn't crash if any
+unexpected characters were entered.
 
-![Login](Pictures/Login.JPG)
+For the name, I used a regular expression which only accepted alphabetical
+characters and hyphens.
 
-After logging in with the correct credentials, the user is taken to the 
-Order Screen where they can order several items and are shown the price based 
-on their selections. The prices are updated whenever a change is made.
+For the numbers (hours and pay rate) I converted it into a decimal number
+to calculate the total pay.
 
-![Ordering](Pictures/Ordering.JPG)
-
-After selecting items, they can click the view receipt button to view the 
-totals of the items purchased
-
-![Receipt](Pictures/Receipt.JPG)
-
-The navigation bar has options to take you to a landing page or change profile
-information:
-
-![ProfileInfo](Pictures/ProfileInfo.JPG)
-
-![ChangePassword](Pictures/ChangePassword.JPG)
-
-There is also a navigation menu item to log out of the application which takes you
-to a screen that confirms logout and has a button to return to the login screen:
-
-![Logout](Pictures/Logout.JPG)
+When determining the pay, I split the code so it would calculate OT pay if 
+the hours were greater than 40 using an if/else statement. I added code that applied to both
+below the conditional statements to reduce the amount of code being re-written when the 
+calculation would be the same.
 
 ### Lessons Learned
 
-I learned about managing state and how pages are constructed in webforms. I gained more experience and feel
-more comfortable with C# after completing this project. I will certainly be looking into how I can use C#
-in a full stack application, the idea being .Net with React.
+This was my first "real" app with C# so it was a little bit new to me but I
+picked it up quickly since it's programming at the end of the day. Coming 
+from a TypeScript background, the strongly typed language didn't phase me.
 
+### Pictures of the app
+
+#### Before Submission
+
+![Before](Pictures/Picture1.JPG)
+
+#### After Submission
+
+![After](Pictures/After.JPG)
 
