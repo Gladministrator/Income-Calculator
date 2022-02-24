@@ -1,5 +1,5 @@
 # Income-Calculator
-Simple app build with ASP.NET 4.7 to calculate weekly earnings
+Simple app built with ASP.NET 4.7 to calculate weekly earnings
 
 ## Technologies
   - C#
