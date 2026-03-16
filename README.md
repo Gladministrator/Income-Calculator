@@ -4,11 +4,9 @@ Initial
 
 ![Enter Payments](Pictures/Picture1.JPG)
 
-
 Calculated result 1
 
 ![Result 1](Pictures/After.JPG)
-
 
 Calculated result 2
 

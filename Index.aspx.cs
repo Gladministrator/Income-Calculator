@@ -7,12 +7,12 @@ namespace Pay_Application
     public partial class Index : System.Web.UI.Page
     {
         /// page load visibility changes so the pay statement is reset on re render.
-        protected void Page_Load (object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
             PanelPayStatement.Visible = false;
         }
 
-        protected void Button1_Click (object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
             if (
             Filter_and_Add_Name(FirstNameText, InfoFirstNameLabel) &
@@ -40,7 +40,7 @@ namespace Pay_Application
         /// </summary>
         /// <param name="hours"></param>
         /// <param name="payRate"></param>
-        private void Compensation_Calcs (TextBox hours, TextBox payRate)
+        private void Compensation_Calcs(TextBox hours, TextBox payRate)
         {
             decimal dTotalPay;
             decimal dRegularPay;
@@ -79,7 +79,7 @@ namespace Pay_Application
         /// <param name="numberData">number text to check</param>
         /// <param name="infoLabelTip">tooltip to adjust if needed with applicable messages</param>
         /// <returns></returns>
-        private bool Validate_Number (TextBox numberData, Label infoLabelTip, decimal limit = decimal.MaxValue)
+        private bool Validate_Number(TextBox numberData, Label infoLabelTip, decimal limit = decimal.MaxValue)
         {
             try
             {
@@ -110,7 +110,7 @@ namespace Pay_Application
         /// <param name="inputTextData">textbox field to check</param>
         /// <param name="infoLabelTip">label to modify if invalid</param>
         /// <returns></returns>
-        private bool Filter_and_Add_Name (TextBox inputTextData, Label infoLabelTip)
+        private bool Filter_and_Add_Name(TextBox inputTextData, Label infoLabelTip)
         {
             var filteredString = Regex.Replace(inputTextData.Text, @"[^A-Za-z\-]", "");
             inputTextData.Text = filteredString.Trim();
@@ -128,7 +128,7 @@ namespace Pay_Application
             }
         }
 
-        protected void ClearButton_Click (object sender, EventArgs e)
+        protected void ClearButton_Click(object sender, EventArgs e)
         {
             FirstNameText.Text = string.Empty;
             LastNameText.Text = string.Empty;
